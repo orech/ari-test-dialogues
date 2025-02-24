@@ -24,13 +24,13 @@ if "authenticated" not in st.session_state:
     st.rerun()
 
 
-def load_fake_users():
-    with open(".data/product_managers.json", "r") as f:
-        users = json.load(f)["profiles"]
-    return {u["name"]: f"Imagine you are acting as a person... {json.dumps(u)}" for u in users}
+# def load_fake_users():
+#     with open(".data/product_managers.json", "r") as f:
+#         users = json.load(f)["profiles"]
+#     return {u["name"]: f"Imagine you are acting as a person... {json.dumps(u)}" for u in users}
 
 
-FAKE_USERS = load_fake_users()
+# FAKE_USERS = load_fake_users()
 
 
 def load_prompts():
